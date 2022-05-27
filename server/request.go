@@ -44,7 +44,7 @@ func main() {
 			continue
 		}
 		products = append(products, p)
-		//fmt.Println(p.anime_name)
+		fmt.Println(p.anime_name)
 	}
 
 	fmt.Println(products)
