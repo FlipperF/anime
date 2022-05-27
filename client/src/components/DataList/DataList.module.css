@@ -1,0 +1,14 @@
+.dataList{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.pageName{
+    font-size: 40px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
