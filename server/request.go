@@ -18,15 +18,11 @@ type animeContentList struct {
 }
 
 var db *sql.DB
+var err error
 
 func main() {
 
-	db, err := sql.Open("postgres", "user=postgres password=600600 dbname=postgres sslmode=disable")
-
-	if err != nil {
-		panic(err)
-	}
-	defer db.Close()
+	ConnectDB()
 
 	rows, err := db.Query("select * from anime_list")
 	if err != nil {
@@ -53,4 +49,14 @@ func main() {
 	var a string
 	fmt.Scan(&a)
 
+}
+
+func ConnectDB() {
+	var err error
+	db, err = sql.Open("postgres", "user=postgres password=600600 dbname=postgres sslmode=disable")
+
+	if err != nil {
+		panic(err)
+	}
+	//defer db.Close()
 }
