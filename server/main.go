@@ -43,6 +43,7 @@ func main() {
 	r := mux.NewRouter()
 	titles = append(titles, AnimeTitleInfo{ID: "1", AnimeName: "Стальной алхимик: Братство", AnimeType: "Аниме", AnimeYear: "2009", AnimePreriewImg: "https://nyaa.shikimori.one/system/animes/original/6325.jpg?1633690005"})
 	titles = append(titles, AnimeTitleInfo{ID: "2", AnimeName: "Наруто", AnimeType: "Аниме", AnimeYear: "2002", AnimePreriewImg: "https://nyaa.shikimori.one/system/animes/original/20.jpg?1633690219"})
+	titles = append(titles, AnimeTitleInfo{ID: "3", AnimeName: "Жозе, тигр и рыба", AnimeType: "Фильм", AnimeYear: "2020", AnimePreriewImg: "https://moe.shikimori.one/system/animes/preview/40787.jpg"})
 	r.HandleFunc("/anime", getAnimeAll).Methods("GET")
 	r.HandleFunc("/anime/{id}", getAnime).Methods("GET")
 
