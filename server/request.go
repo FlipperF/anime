@@ -1,4 +1,4 @@
-package main
+package request
 
 import (
 	"database/sql"
@@ -20,7 +20,7 @@ type animeContentList struct {
 var db *sql.DB
 var err error
 
-func main() {
+func request() {
 
 	ConnectDB()
 

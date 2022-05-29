@@ -4,6 +4,30 @@ import classes from './DataList.module.css'
 
 const DataList = ({data, title}) => {
     
+    const request = async() => {
+        //localhost:8000/anime
+
+        try{
+            const response = await fetch("http://localhost:8000/anime", {
+
+                headers: {
+                  "Content-Type": 'application/json',                   
+                  "Access-Control-Allow-Origin": '*'
+                }
+            });
+    
+            const result = await response.json();
+            console.log(result)
+        }
+
+        catch(e){
+            console.log(e)
+        }
+
+    }
+
+    
+
     const listAnime = data.map((data) => 
         <AnimeCard data={data}/>
     );
@@ -15,6 +39,8 @@ const DataList = ({data, title}) => {
             <div className={classes.dataList}>
                 {listAnime}
             </div>
+
+            <button onClick={request}>Запрос</button>
         </div>
 
     );
