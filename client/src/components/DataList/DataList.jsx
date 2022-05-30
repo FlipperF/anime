@@ -5,24 +5,23 @@ import classes from './DataList.module.css'
 const DataList = ({data, title}) => {
     
     const request = async() => {
-        //localhost:8000/anime
+        fetch('http://localhost:8000/anime')
+        .then(  
+            function(response) {  
+            if (response.status !== 200) {  
+                console.log('Ошибка. Статус код: ' +  response.status);  
+                return;
+            }
 
-        try{
-            const response = await fetch("http://localhost:8000/anime", {
-
-                headers: {
-                  "Content-Type": 'application/json',                   
-                  "Access-Control-Allow-Origin": '*'
-                }
-            });
-    
-            const result = await response.json();
-            console.log(result)
-        }
-
-        catch(e){
-            console.log(e)
-        }
+            // Examine the text in the response  
+            response.json().then(function(data) {  
+                console.log(data);  
+            });  
+            }
+        )  
+        .catch(function(err) {  
+            console.log('Fetch Error :-S', err);  
+        });
 
     }
 

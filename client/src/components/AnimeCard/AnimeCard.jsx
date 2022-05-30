@@ -8,7 +8,7 @@ const AnimeCard = (props) =>{
     if(props.data.status == 'complete'){
         cardClass = classes.complete + ' ' + classes.animeCard;
     }
-
+    
     else if(props.data.status == 'whatch'){
         cardClass = classes.whatch + ' ' + classes.animeCard;
     }
