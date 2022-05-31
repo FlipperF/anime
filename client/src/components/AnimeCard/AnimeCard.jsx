@@ -18,7 +18,7 @@ const AnimeCard = (props) =>{
     }
 
     return(
-        <a className={cardClass} href={props.data.href}>
+        <a className={cardClass} href={props.data.href} key={props.data.id}>
 
             <img className={classes.animeImg} src={props.data.img}/>
             <p className={classes.animeName}>{props.data.title}</p>

@@ -1,0 +1,29 @@
+.menuBlock{
+    max-width: 35%;
+}
+
+.mainMenu{
+    font-size: 20px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.mainMenu__li {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.mainMenu__li__link{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    font-weight: 600;
+}
+
+.mainMenu__li__link:hover{
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: .3s;
+}

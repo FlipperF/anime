@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: whitesmoke;
+    font-family: 'Cuprum', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+
+body{
+    background: #2a2d3a;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -11,10 +18,37 @@ h1,h2,h3,h4,h5,h6,p{
 
 .mainTitle{
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cuprum', sans-serif;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    background: #242630;
+    padding: 15px;
 }
+
+header{
+    height: 65px;
+    background-color: #0b1928;
+    border-bottom: 3px solid #f41400;
+}
+
+.header-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background: #0b1928;
+}
+
+.siteLogo{
+    max-width: 250px;
+    transform: translateY(2px);
+}
+
+
+
+
+

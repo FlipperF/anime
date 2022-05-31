@@ -1,0 +1,39 @@
+.search{
+    width: 25%;
+}
+
+.searchBlock {
+    background: white;
+    background: #464b5e;
+    border-radius: 3px;
+    position: relative;
+}
+
+.searchBlock:hover .searchBlock__icon{
+    color: #ef493b;
+}
+.searchBlock input{
+    height: 35px;
+    color: black;
+    border-radius: 0px;
+    border: none;
+    margin-left: 30px;
+    width: calc(100% - 40px);
+    background: #464b5e;
+    color: white;
+    font-size: 16px;
+}
+
+.searchBlock_input:focus-visible{
+    outline: none;
+}
+
+.searchBlock_input::-webkit-input-placeholder {color: #dfdfdf;}
+
+.searchBlock__icon{
+    position: absolute;
+    left: 8px;
+    top: 9px;
+    color: #dfdfdf;
+    transition: .3s;
+}

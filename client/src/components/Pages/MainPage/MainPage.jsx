@@ -4,6 +4,7 @@ import DataList from '../../DataList/DataList';
 const MainPage = () => {
 
     let anime = [{
+        id: '1',
         title: 'Наруто',
         year: '2002',
         type: 'TV Serial',
@@ -12,6 +13,7 @@ const MainPage = () => {
         href:''
       },
       {
+        id: '2',
         title: 'Наруто: Ураганные хроники 3 — Наследники воли огня',
         year: '2009',
         type: 'Фильм',
@@ -20,6 +22,7 @@ const MainPage = () => {
         href: ''
       },
       {
+        id: '3',
         title: 'Наруто: Пересечение дорог',
         year: '2009',
         type: 'Спешл',
@@ -28,6 +31,7 @@ const MainPage = () => {
         href: ''
       },
       {
+        id: '4',
         title: 'Наруто: Спортивный фестиваль Конохи',
         year: '2004',
         type: 'Спешл',
@@ -39,6 +43,7 @@ const MainPage = () => {
       ];
       
       let manga = [{
+        id: '1',
         title: 'Наруто',
         year: '2002',
         type: 'TV Serial',
@@ -47,6 +52,7 @@ const MainPage = () => {
         href:''
       },
       {
+        id: '2',
         title: 'Наруто: Ураганные хроники 3 — Наследники воли огня',
         year: '2009',
         type: 'Фильм',
@@ -55,6 +61,7 @@ const MainPage = () => {
         href: ''
       },
       {
+        id: '3',
         title: 'Наруто: Пересечение дорог',
         year: '2009',
         type: 'Спешл',
@@ -63,6 +70,7 @@ const MainPage = () => {
         href: ''
       },
       {
+        id: '4',
         title: 'Наруто: Спортивный фестиваль Конохи',
         year: '2004',
         type: 'Спешл',
@@ -75,7 +83,7 @@ const MainPage = () => {
       
 
     return (
-        <div>
+        <div className='container'>
             <DataList data={anime} title="Список аниме"/>
             <DataList data={manga} title="Список Манги"/>
         </div>

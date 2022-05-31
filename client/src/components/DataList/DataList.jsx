@@ -12,7 +12,7 @@ const DataList = ({data, title}) => {
                 console.log('Ошибка. Статус код: ' +  response.status);  
                 return;
             }
-
+            
             // Examine the text in the response  
             response.json().then(function(data) {  
                 console.log(data);  
@@ -25,10 +25,13 @@ const DataList = ({data, title}) => {
 
     }
 
-    
+    var list = data.map((data) => 
+        console.log(data.id)
+    );
+
 
     const listAnime = data.map((data) => 
-        <AnimeCard data={data}/>
+        <AnimeCard key={data.id} data={data}/>
     );
 
 
