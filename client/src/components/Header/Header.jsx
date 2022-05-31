@@ -2,7 +2,7 @@ import React from 'react';
 import MainMenu from '../MainMenu/MainMenu';
 import Search from '../Search/Search';
 import UserAccount from '../UserAccount/UserAccount';
-import Logo from '/Users/99web/Desktop/react test 2/client/src/img/logo.svg';
+import Logo from '../../img/logo.svg';
 const Header = () => {
     return (
         <div>
