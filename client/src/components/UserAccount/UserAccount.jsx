@@ -6,8 +6,8 @@ import classes from './UserAccount.module.css'
 const UserAccount = () => {
     return (
         <div className={classes.accountBlock}>
-            {/* <AccountNotAuthorized/> */}
-            <AccountAutorized/>
+            <AccountNotAuthorized/>
+            {/* <AccountAutorized/> */}
         </div>
     );
 };

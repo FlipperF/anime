@@ -1,6 +1,7 @@
 
 import Header from './components/Header/Header';
 import MainPage from './components/Pages/MainPage/MainPage';
+import Popups from './components/Popups/Popups';
 import './style/App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <div>
         <Header/>
         <MainPage/>
+        <Popups/>
       </div>
     </div>
   );
