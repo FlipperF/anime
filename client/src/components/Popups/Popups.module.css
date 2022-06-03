@@ -41,7 +41,7 @@
 .kagune34::before{
     position: absolute;
     content: url('./assets/kagune3.png');
-    right: -41px;
+    right: -42px;
     top: -5px;
     z-index: 10;
 }

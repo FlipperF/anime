@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LoginForm from './LoginForm/LoginForm';
 import classes from './Popups.module.css';
 
-const Popups = () => {
+const Popups = ({acive, setActive}) => {
+
+    let [popUpStatus, setPopUpstatus] = useState("hidden")
+
+
     return (
-        <div className={classes.frame}>
+        <div className={classes.frame} status={popUpStatus} >
 
             <div className={classes.container}>
                 <div className={classes.kagune12}>
