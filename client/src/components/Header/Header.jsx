@@ -1,8 +1,8 @@
 import React from 'react';
 import MainMenu from '../MainMenu/MainMenu';
-import Search from '../Search/Search';
 import UserAccount from '../UserAccount/UserAccount';
 import Logo from '../../img/logo.svg';
+import Search from './Search/Search';
 const Header = () => {
     return (
         <div>
