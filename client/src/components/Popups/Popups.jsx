@@ -5,9 +5,7 @@ import LoginForm from './LoginForm/LoginForm';
 import classes from './Popups.module.css';
 
 const Popups = ({acive, setActive}) => {
-
-    let [popUpStatus, setPopUpstatus] = useState("hidden")
-
+    
     const isVisiblePopup = useSelector( (state) => state.isVisiblePopup)
 
     const dispatch = useDispatch()
@@ -20,7 +18,7 @@ const Popups = ({acive, setActive}) => {
     }
 
     return (
-        <div className={classes.frame} onClick={hundleClick}>
+        <div className={classes.frame} >
 
             <div className={classes.container}>
                 <div className={classes.kagune12} onClick={(e) => e.stopPropagation()}>

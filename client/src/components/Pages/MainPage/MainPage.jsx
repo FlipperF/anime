@@ -1,5 +1,6 @@
 import React from 'react';
 import DataList from '../../DataList/DataList';
+import PopularNow from '../../PopularNow/PopularNow';
 
 const MainPage = () => {
 
@@ -84,8 +85,9 @@ const MainPage = () => {
 
     return (
         <div className='container'>
-            <DataList data={anime} title="Список аниме"/>
-            <DataList data={manga} title="Список Манги"/>
+            {/* <DataList data={anime} title="Список аниме"/>
+            <DataList data={manga} title="Список Манги"/> */}
+            <PopularNow/>
         </div>
     );
 };

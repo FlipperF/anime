@@ -70,3 +70,8 @@
     top: calc(50% - 25px);
     transform: translateX(-50%);
 }
+
+.close:hover{
+    transition: .3s;
+    background: rgba(244, 20, 0, 0.6);
+}
